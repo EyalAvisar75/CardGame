@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CardGameController.h
 //  CardGame
 //
 //  Created by Eyal Avissar on 02/10/2021.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface CardGameController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

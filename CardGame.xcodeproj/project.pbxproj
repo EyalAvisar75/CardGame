@@ -17,6 +17,8 @@
 		6C4EE4DD2708635A0097F62A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C4EE4DB2708635A0097F62A /* LaunchScreen.storyboard */; };
 		6C4EE4E02708635A0097F62A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4EE4DF2708635A0097F62A /* main.m */; };
 		6C4EE4E8270863860097F62A /* CardGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4EE4E7270863860097F62A /* CardGameController.m */; };
+		6C744244270C2C9000718428 /* CardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C744242270C2C9000718428 /* CardCell.m */; };
+		6C744245270C2C9000718428 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C744243270C2C9000718428 /* CardCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,9 @@
 		6C4EE4DF2708635A0097F62A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6C4EE4E6270863860097F62A /* CardGameController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardGameController.h; sourceTree = "<group>"; };
 		6C4EE4E7270863860097F62A /* CardGameController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardGameController.m; sourceTree = "<group>"; };
+		6C744241270C2C9000718428 /* CardCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardCell.h; sourceTree = "<group>"; };
+		6C744242270C2C9000718428 /* CardCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardCell.m; sourceTree = "<group>"; };
+		6C744243270C2C9000718428 /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +94,7 @@
 				6C4EE4D1270863500097F62A /* SceneDelegate.m */,
 				6C1394A127086BC900EC64A6 /* Models */,
 				6C4EE4E9270864F70097F62A /* Controllers */,
-				6C4EE4D6270863500097F62A /* Main.storyboard */,
+				6C74423D270C2BE800718428 /* Views */,
 				6C4EE4D92708635A0097F62A /* Assets.xcassets */,
 				6C4EE4DB2708635A0097F62A /* LaunchScreen.storyboard */,
 				6C4EE4DE2708635A0097F62A /* Info.plist */,
@@ -105,6 +110,17 @@
 				6C4EE4E7270863860097F62A /* CardGameController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6C74423D270C2BE800718428 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6C4EE4D6270863500097F62A /* Main.storyboard */,
+				6C744241270C2C9000718428 /* CardCell.h */,
+				6C744242270C2C9000718428 /* CardCell.m */,
+				6C744243270C2C9000718428 /* CardCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +183,7 @@
 				6C4EE4DD2708635A0097F62A /* LaunchScreen.storyboard in Resources */,
 				6C4EE4DA2708635A0097F62A /* Assets.xcassets in Resources */,
 				6C4EE4D8270863500097F62A /* Main.storyboard in Resources */,
+				6C744245270C2C9000718428 /* CardCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +201,7 @@
 				6C1394AA27086D4D00EC64A6 /* GameCard.m in Sources */,
 				6C4EE4D2270863500097F62A /* SceneDelegate.m in Sources */,
 				6C4EE4E8270863860097F62A /* CardGameController.m in Sources */,
+				6C744244270C2C9000718428 /* CardCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

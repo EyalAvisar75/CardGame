@@ -14,9 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Deck : NSObject
 
 @property NSMutableArray *cards;
+@property (nonatomic) NSMutableArray *matchCards;
 
 -(GameCard *)getCardAtTop;
 -(GameCard *)getCardAtRandom;
++(Deck *) getDeckWithSize: (int) deckSize;
 
 @end
 

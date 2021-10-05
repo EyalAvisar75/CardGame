@@ -7,10 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Deck.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CardGameController : UIViewController
+@interface CardGameController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+
+@property int numberOfCards;
+@property (nonatomic) int score;
+@property Deck *gameDeck;
 
 @end
 

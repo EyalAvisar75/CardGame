@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CardCell">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="440" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YiG-8R-9Oz">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="YiG-8R-9Oz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="22z-JV-PMJ"/>
+                <constraint firstAttribute="bottom" secondItem="YiG-8R-9Oz" secondAttribute="bottom" id="OvT-kt-LEB"/>
+                <constraint firstAttribute="trailing" secondItem="YiG-8R-9Oz" secondAttribute="trailing" id="RLq-1R-9CM"/>
+                <constraint firstItem="YiG-8R-9Oz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="XPu-x1-emY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="440" height="50"/>
+            <connections>
+                <outlet property="cardLabel" destination="YiG-8R-9Oz" id="Af2-TO-zEB"/>
+            </connections>
+            <point key="canvasLocation" x="23" y="131"/>
+        </collectionViewCell>
+    </objects>
+</document>

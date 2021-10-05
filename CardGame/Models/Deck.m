@@ -31,6 +31,24 @@
     return self;
 }
 
++ (Deck *)getDeckWithSize:(int)deckSize {
+    Deck *cards = [[Deck alloc] init];
+    NSMutableArray *deck = [[NSMutableArray alloc] initWithCapacity:deckSize];
+    
+    for (int index = 0; index < deckSize; index++) {
+        
+        int cardIndex = arc4random_uniform((int)[cards.cards count] - 1);
+        
+        GameCard *card = [cards getCardAtIndex:cardIndex];
+        NSLog(@"%@", card.symbol);
+        [deck addObject:card];
+    }
+    
+    cards.cards = deck;
+    
+    return cards;
+}
+
 - (GameCard *)getCardAtTop {
     return [self getCardAtIndex:(int)[self.cards count] - 1];
 }

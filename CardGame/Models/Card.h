@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property int suit;
 @property int rank;
+@property (getter=isChosen) BOOL chosen;
+@property (getter=isMatch) BOOL match;
 
 -(instancetype)initWithSuit: (int) suit Rank: (int) rank;
 
